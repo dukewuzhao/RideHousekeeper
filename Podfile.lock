@@ -1,0 +1,187 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AlipaySDK-iOS (15.6.8)
+  - AvoidCrash (2.5.2)
+  - BaiduMapKit (4.2.0)
+  - Bugly (2.5.0)
+  - CRBoxInputView (1.1.5):
+    - Masonry
+  - FBRetainCycleDetector (0.1.3)
+  - FDFullscreenPopGesture (1.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - iOSDFULibrary (4.2.2):
+    - Zip (~> 1.0)
+  - JCore (2.1.1)
+  - JPush (3.2.1):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - JRSwizzle (1.0)
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
+  - MJRefresh (3.2.0)
+  - MLeaksFinder (0.2.1):
+    - FBRetainCycleDetector
+  - MSWeakTimer (1.1.0)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
+  - NSDictionary-NilSafe (0.2.0)
+  - PromiseKit (6.10.0):
+    - PromiseKit/CorePromise (= 6.10.0)
+    - PromiseKit/Foundation (= 6.10.0)
+    - PromiseKit/UIKit (= 6.10.0)
+  - PromiseKit/CorePromise (6.10.0)
+  - PromiseKit/Foundation (6.10.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.10.0):
+    - PromiseKit/CorePromise
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SGQRCode (3.0.1)
+  - SVProgressHUD (2.2.5)
+  - TFHpple (2.0.0)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - WechatOpenSDK (1.8.6)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYModel (1.0.4)
+  - YYText (1.0.7)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+  - Zip (1.1.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AlipaySDK-iOS
+  - AvoidCrash (~> 2.5.2)
+  - BaiduMapKit
+  - Bugly
+  - CRBoxInputView (= 1.1.5)
+  - FDFullscreenPopGesture (= 1.1)
+  - FMDB (~> 2.6.2)
+  - iOSDFULibrary
+  - JPush
+  - JRSwizzle
+  - lottie-ios
+  - Masonry
+  - MJRefresh
+  - MLeaksFinder (~> 0.2.1)
+  - MSWeakTimer (~> 1.1.0)
+  - NJKWebViewProgress
+  - NSDictionary-NilSafe
+  - PromiseKit (~> 6.10.0)
+  - ReactiveCocoa (~> 2.5.0)
+  - SDWebImage
+  - SGQRCode (~> 3.0.1)
+  - SVProgressHUD
+  - TFHpple (~> 2.0.0)
+  - "UITableView+FDTemplateLayoutCell (~> 1.6)"
+  - WechatOpenSDK
+  - YYModel
+  - YYText
+  - YYWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AlipaySDK-iOS
+    - AvoidCrash
+    - BaiduMapKit
+    - Bugly
+    - CRBoxInputView
+    - FBRetainCycleDetector
+    - FDFullscreenPopGesture
+    - FMDB
+    - iOSDFULibrary
+    - JCore
+    - JPush
+    - JRSwizzle
+    - lottie-ios
+    - Masonry
+    - MJRefresh
+    - MLeaksFinder
+    - MSWeakTimer
+    - NJKWebViewProgress
+    - NSDictionary-NilSafe
+    - PromiseKit
+    - ReactiveCocoa
+    - SDWebImage
+    - SGQRCode
+    - SVProgressHUD
+    - TFHpple
+    - "UITableView+FDTemplateLayoutCell"
+    - WechatOpenSDK
+    - YYCache
+    - YYImage
+    - YYModel
+    - YYText
+    - YYWebImage
+    - Zip
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AlipaySDK-iOS: 703a55774a37f412410ab04af96c011b91ec58cb
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  BaiduMapKit: b6a8f31b3d2e4e5cad4084512a0d9a3878638272
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  CRBoxInputView: 40aeedca17d33f7464cc3c3b7d75019ae5a9533b
+  FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  iOSDFULibrary: 65a30a36d33ef451ef2d6c2b6a002a26eed786af
+  JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
+  JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  MLeaksFinder: 0850e2f2abc7227adc4d4e2d1992b431264eb4d5
+  MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+  NSDictionary-NilSafe: 3df5056bf920974cb9822ed24bfc41af44225201
+  PromiseKit: 1fdaeb6c0a94a5114fcb814ff3d772b86886ad4e
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WechatOpenSDK: 368ae03b72ee3ea1328c4f11326fbb5d2721d118
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
+
+PODFILE CHECKSUM: c986fc9dd467afd5b5523c2931706a9189aca982
+
+COCOAPODS: 1.5.3

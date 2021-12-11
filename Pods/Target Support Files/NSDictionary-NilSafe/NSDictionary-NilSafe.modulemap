@@ -1,0 +1,6 @@
+framework module NSDictionary_NilSafe {
+  umbrella header "NSDictionary-NilSafe-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,664 @@
+/* 
+  Localizable.strings
+  LanguageSettingsDemo
+
+  Created by DarkAngel on 2017/5/4.
+  Copyright © 2017年 暗の天使. All rights reserved.
+*/
+
+"VCControlColor" = "#cb0016";
+"mainTextColor" = "#000000";
+/*!-- 权限 --*/
+"NSBluetoothAlwaysUsageDescription" = "Use Bluetooth to connect smart cars";
+"NSBluetoothPeripheralUsageDescription" = "Connect and remotely control the vehicle using Bluetooth";
+"NSCameraUsageDescription" = "You need to scan the QR code to bind the peripherals. Do you allow the camera to be turned on?";
+"NSContactsUsageDescription" = "Access address book";
+"NSPhotoLibraryUsageDescription" = "Your consent is required to scan the accessory code. Is access to the album allowed?";
+/*!-- 版本检测 --*/
+"bike_check_update" = "A new software version (%@) was detected, is it updated?";
+/*!-- 前后轮图片 --*/
+"peripheral_pressure_frontlwheel" = "peripheral_pressure_frontlwheel_en";
+"peripheral_pressure_realwheel" = "peripheral_pressure_realwheel_en";
+
+/*!-- 帮助中心 --*/
+"binding_help" = "binding_help_en";
+"remote_key_description" = "remote_key_description_en";
+"induction_key_description" = "induction_key_description_en";
+
+"app_name_dowl" = "znys";
+"bike_name" = "SUNRA E-vehicle";
+"welcome_info" = "Jiangsu Xinri E-Vehicle Co., Ltd.";
+"car" = "Vehicle";"map" = "Map";
+"user" = "Me";
+"into" = "Loading";
+"find_device" = "Seeking vehicle";
+"default_brand" = "SUNRA";
+"request_timed_out" = "Request timed out";
+"bluetooth_status" = "Bluetooth is not currently on, is it on?";
+/*<!-- 登录 -->*/
+"loging" = "Login";
+"login_getting" = "logging in";
+"register" = "Sign up";
+"find_pwd" = "Reset password";
+"forget_pwd" = "Forgot password?";
+"register_now" = "Sign up";
+"phone_hint" = "Mobile No.";
+"phone_format_wrong" = "Invalid mobile number is incorrect, please input valid number";
+"import_new" = "Please input new password";
+"import_auth" = "Verification code";
+"pwd_hint" = "Password (6-20 digits,letters)";
+"pwd_hint_login" = "Password";
+"pwd_format_wrong" = "The password should be a valid 6-20 digit alphanumeric combination";
+"sure" = "Confirm";
+"next_step" = "Next step";
+"accept" = "Read and accept";
+"protocol" = "《SUNRA Smart Control Agreement》";
+"user_protocol" = "User Agreement";
+"auth_code" = "Get verification code";
+"reset_code" = "Reacquire";
+"again_pwd" = "Please enter your password again";
+"pass_register" = "Approved";
+"regist_success" = "Congratulations, registration is successful";
+"pass_word" = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRETUVWXYZ";
+"back_show_content" = "Press again to exit SUNRA Smart Control";
+"auto_content" = "After the vehicle is turned off, the vehicle will no longer have an automatic lock function. It is recommended that you turn it on.";
+"bike_passwd_wrong_content" = "Connection failed, please re-bind";
+
+//<!-- 完善个人信息 -->
+"complete_userinfo" = "Registration message";
+"jump" = "Ignore";
+"single_heard" = "Personal profile photo";
+"select_birthday" = "Birthday";
+
+//<!-- 公用提示 -->
+"big_max_add_bike" = "Can only add up to five vehicles";
+"unsupport_ble" = "Your phone does not support Bluetooth 4.0";
+"device_disconnect" = "Device not connected";
+"device_has_disconnect" = "Device disconnected";
+"reminders" = "Tips";
+"ok" = "Confirm";
+"cancel" = "Cancel";
+"login_success" = "Login successfully";
+"login_fail" = "Login failed, please try again later";
+"fail_name_or_pwd" = "The username or password is incorrect. Please confirm and log in.";
+"regist_fail" = "Registration failed, please try again later";
+"no_network_connect" = "The network is not connected, please check the network settings";
+"no_location_service" = "Location service is not turned on";
+"getting" = "Getting";
+"exiting" = "Exiting";
+"saving" = "saving";
+"commiting" = "Submitting";
+"set_pwd_sucess" = "Dear users, your password is set successfully";
+"phone_unregist" = "The phone is not registered";
+"phone_has_regist" = "The phone has been registered";
+"code_success" = "Verify that the text message has been sent to %s";
+"code_fail" = "Failed to get verification code, please try again later";
+"pwd_short" = "Password must be at least 6 digits";
+"pwd_un_same" = "The password input is inconsistent twice, please re-enter";
+"pwd_new_same_old" = "Old password can not be the same as new password";
+"pwd_update_success" = "Password resetting successfully";
+"pwd_update_fail" = "Password resetting failed";
+"can_next" = "Please read and agree to the registration agreement";
+"exit_sure" = "Confirm to exit?";
+"delete_remind" = "confirm delete?";
+"delete_success" = "successfully deleted";
+"delete_fail" = "failed to delete";
+"fail" = "Operation failed, please try again later";
+"exit_fail" = "Exit failed, please try again later";
+"save_success" = "Saved successfully";
+"save_fail" = "Save failed, please try again later";
+"birthday_set_fail" = "Birth date setting failed";
+"user_token_fail" = "User login information expired, please log in again";
+"date_to_big" = "Time setting no longer than today";
+"closet_time_out" = "Clicking frequency too fast";
+"unlock_can_chamberpot" = "Please unlock first";
+"unlock_can_opendoor" = "Please unlock first";
+"reload" = "Reload";
+
+//<!-- 车 -->
+"car_status" = "Vehicle status:";
+"unlock" = "unlock";
+"electric_door" = "Ignition";
+"chamberpot" = "Seat";
+"find_car" = "Vehicle search";
+"induction" = "Mobile phone sensoring";
+"no_induction" = "Mobile phone remote control";
+"has_lock" = "Locked";
+"voltage" = "voltage";
+"add_car" = "+ Add vehicle";
+"disarm" = "Unlock";
+"has_no_disarm" = "Locked";
+"car_lock" = "Lock";
+"riding" = "Riding status";
+"mute" = "Mute";
+"no_mute" = "Mute";
+"now_riding_content" = "Unlockable during riding";
+"blu_key_have" = "Sensing priority, invalidation";
+"no_device" = "No connected device";
+"device_change" = "Device switching...";
+"device_change_success" = "Device switching successfully";
+"device_change_fail" = "Device switching failed";
+"remove_device_true" = "After untied, the phone will not be able to remotely control the vehicle. Are you sure to unbind the device\?";
+"click_medical" = "Detection";
+"bike_set" = "Settings";
+"device_set_content" = "Device configuration";
+"has_connect" = "Connected";
+"no_yaoshi_go" = "Keyless wisdom to travel";
+"no_yaoshi_go_gps" = "Safer and smarter";
+"vehicle_service" = "Vehicle services";
+/*<!-- 车况 -->*/
+"key_charge" = "key charge";
+"Car_condition" = "Car condition";
+"Tire_pressure_status" = "Tire pressure status";
+
+//<!-- 侧边栏 -->
+"bike_house" = "My Garage";
+"people_center" = "My Center";
+"msg_notication" = "Notification";
+"use_way" = "Use instructions";
+"device_battery" = "Accessories power";
+
+//<!-- GPS服务信息 -->
+"gps_positioner" = "GPS locator";
+"gps_service" = "GPS service";
+"historical_order" = "Historical order";
+"traffic_service" = "GPS equipment operation flow service";
+"service_stop_time" = "Service deadline";
+"service_remain_days" = "Remaining service days";
+"service_extended_time" = "Extended service period";
+"stewardship_service" = "SUNRA Customer service";
+"customer_service_phone" = "Consumer hotline";
+"service_phonenum" = "400-885-0061";
+"service_null_content" = "Your vehicle has not added GPS yet. Can you go to the store to buy and install?";
+"service_null_blew" = "Note: After installation, you can directly scan the QR code on the GPS and bind it to the vehicle.";
+"consult" = "Advisory";
+"renewals_recharge" = "Renewal fee";
+
+//<!-- GPS定位器 -->
+"gps_unbind_bike" = "Unbind with the vehicle";
+"device_name" = "Device name";
+"device_qrcode" = "Device QR code";
+"owned_vehicle" = "Affiliated vehicle";
+"activation_time" = "Activation time";
+"gps_version" = "Version number";
+"service_time" = "Service hours";
+"bind_time" = "Binding time";
+"operating_equipment" = "Operating equipment";
+"reset_device" = "Reboot the device";
+"reset_device_content" = "Data loss and other failures, triable";
+
+//<!-- 车辆位置 -->
+"gps_bike_location" = "Vehicle location";
+"gps_bike_last_location" = "Vehicle final positioning time:";
+"signal_intensity" = "Signal strength:";
+"location" = "position:";
+"navigation" = "Navigation";
+"today_trip" = "Today\'s trip";
+"all_trip" = "All trip";
+
+//<!-- 骑行轨迹 -->
+"driving_report" = "Driving report";
+"ride_track" = "Driving track";
+"start" = "Starting";
+"end" = "End";
+"bike_shake" = "Vehicle vibration";
+"mileage" = "Range";
+"wain" = "Warning";
+"speed" = "Speed control";
+"bike_hard_shake" = "Vehicle serious vibration";
+"bike_center_shake" = "Vehicle medium vibration";
+"bike_light_shake" = "Slight vibration of the vehicle";
+"date_choice" = "Date selection";
+"sun" = "Sunday";
+"mon" = "Monday";
+"tue" = "Tuesday";
+"wed" = "Wednesday";
+"thu" = "Thursday";
+"fri" = "Friday";
+"sat" = "Saturday";
+
+//<!-- 车辆详细信息 -->
+"brand_model" = "Brand";
+"bind_user" = "Sharing Vehicle";
+"accessories_manager" = "Accessories";
+"induction_function" = "Sensing function";
+"induction_function_phone" = "Mobile phone sensing";
+"induction_function_phone_to_near" = "In order to ensure your smooth use of sensing, please keep the app running in the background.";
+"induction_function_phone_open_content" = "Bluetooth signal is susceptible to the environment, your experience may be poor due to short sensing distance.";
+"induction_distance_key" = "Accessory sensoring";
+"induction_distance" = "Sensing distance";
+"vibration_sensor_sensitivity" = "Vibration sensitivity";
+"hardware_version" = "Hardware version";
+"firmware_version" = "Firmware version";
+"automatic_lock" = "Automatic locking";
+"tirt_wain" = "Overspeed Alarm";
+"pressure_wain" = "Tire Pressure Alarm";
+"automatic_lock_show" = "If cellphone is not connected, vehicle unlocks & wheels do not turn for 45 seconds, it will lock automatically.";
+"un_bind_device" = "Unbinding";
+"near" = "Near";
+"far" = "Far";
+"select_vibration" = "Select vibration sensitivity";
+"high" = "High";
+"low" = "Low";
+"middle" = "Medium";
+"un_bind_success" = "Vehicle unbinding successfully";
+"un_bind_fail" = "Vehicle unbinding failed";
+"bike_has_delete_by_mian" = "Your vehicle has been deleted by the owner";
+"child_can_not_accessories_manager" = "You are sub-user, have no right to manage accessories";
+"smart_max_length" = "Two smart devices at most";
+"child_can_not_update_name" = "Sub-user has no permission to modify the name";
+"bikename_length_big" = "The name too long, up to 10 digits";
+"bikename_length_show" = "2~16 characters";
+"bikename_null" = "Name cannot be empty";
+"auto_content" = "After the Vehicle is turned off, the Vehicle will no longer have an automatic lock function. It is recommended that you turn it on.";
+//<!-- 故障列表 -->
+"fault_list" = "Fault list";
+"fault_check" = "Vehicle Detection";
+"electric_fault" = "Motor";
+"electric_face" = "Motor phase loss";
+"turn_fault" = "Throttle";
+"brake_fault" = "Brake";
+"controller_fault" = "Controller";
+"batt_vol_fault" = "Battery";
+"tire_pressure" = "Tire Pressure";
+"fault" = "Malfunction";
+"fine" = "Health";
+"under_voltage" = "Undervoltage";
+"tirt_f_to_low" = "Front tire pressure is too low";
+"tirt_f_to_high" = "Front tire pressure is too high";
+"tirt_r_to_low" = "Rear tire pressure is too low";
+"tirt_r_to_high" = "Rear tire pressure is too high";
+"tirt_f_abnormal" = "Front tire pressure data abnormal";
+"tirt_r_abnormal" = "Rear tire pressure data abnormal";
+"tirt_f_search" = "Searching for front tire pressure...";
+"tirt_r_search" = "Searching for Rear tire pressure...";
+"tirt_f_ok" = "Front tire pressure is normal";
+"tirt_r_ok" = "Rear tire pressure is normal";
+"start_check" = "Checking";
+"now_checking" = "Scanning";
+"now_checking_over" = "Vehicle inspection completed";
+
+//<!-- 指纹管理 -->
+"bike_fingerpring" = "Fingerprint";
+"fingerpring_manager" = "Fingerprint management";
+"fingerpring_new" = "Input new fingerprint";
+"fingerpring_new_add" = "Input new fingerprint";
+"fingerpring_add" = "Fingerprint";
+"fingerpring_remove" = "Delete fingerprint";
+"fingerpring_editname" = "Edit";
+"fingerpring_set_down" = "Input fingerprint again";
+"fingerpring_content" = "Put your finger (front & edge of it) on the fingerprint sensor, then move away. Please repeat this step.";
+"fingerpring_set_start" = "Fingerprint in preparation";
+"empty" = "Empty";
+"cleared_successfully" = "Cleared successfully";
+"fingerpring_into_success" = "Finished";
+"modify_fingerprint_name" = "Please enter a modified name";
+"fingerprint_modification" = "Fingerprint modification";
+"cleared_all_finger" = "Please touch the fingerprint sensor after emptying until a “bam bam bam” was heard. Then input new fingerprint.";
+"fingerpring_next_new" = "Input the next fingerprint";
+"over" = "Fingerprint entering finished";
+"fingerpring_set_fail" = "Fingerprint input failed";
+"fingerpring_list" = "Fingerprint list(%lu/10)";
+"fingerpring_child_no" = "Sub-users have no permission to operate";
+"fingerpring_max_langth" = "The maximum number of vehicle fingerprints is 10";
+"fingerpring" = "fingerprint";
+
+//<!-- 语音提示 -->
+"fingerpring_set_success" = "Successful entry";
+"fingerpring_set_title" = "Hello, please follow the voice prompt";
+"fingerpring_set_one" = "Please press your finger";
+"fingerpring_set_two" = "Please press your finger again";
+"fingerpring_set_three" = "Please finally press the finger";
+"fingerpring_set_up" = "Please raise your finger";
+
+//<!-- 修改名称 -->
+"car_name" = "Vehicle Name";
+"car_nickname" = "Vehicle nickname";
+"search_car_name" = "Vehicle name";
+//<!-- 扫描车辆 -->
+"bind" = "Binding";
+"bind_car" = "Binding vehicle";
+"bind_start" = "Start searching";
+"bind_start_retry" = "Search again";
+"bind_content_one" = "Long press the key  button";
+"bind_content_two" = "Click on the vehicle & bind";
+"searching_device" = "Searching for the vehicle";
+"set" = "Settings";
+"searched_bike" = "The vehicle found";
+"no_search_car" = "No vehicle found, please confirm the vehicle is in the state of 'to be bound'";
+"no_bing_now" = "Keep unbound>";
+"qgj_device" = "SUNRA E-vehicle";
+"bind_mating" = "Matching";
+
+//<!-- 绑定车辆 -->
+"car_brand" = "Brand";
+"car_model" = "Vehicle model";
+"brand" = "Brand";
+"model" = "Model";
+"input_brand_model" = "Please select the brand and model before submitting";
+"custom" = "Customize";
+"battery_voltage" = "Battery voltage";
+"volt" = "Voltage";
+"temp" = "Temperature";
+"battery_mode" = "Battery type";
+"battery_mode_one" = "NiMH battery";
+"battery_mode_two" = "Lithium-ion battery";
+"battery_mode_three" = "Lead acid battery";
+"vehicle_wheel" = "Vehicle wheel diameter";
+"inch" = "Inch";
+"binding" = "Binding";
+"bike_binding" = "Bound in the vehicle";
+"unbinding" = "Untied";
+"connecting" = "connecting";
+"make_sure_device_binging" = "Please make sure the vehicle is in the bound state";
+"connecting_fail" = "Connection failed, please try again later";
+"device_disconnect_check_after" = "The vehicle is disconnected, please check the condition of the vehicle and re-bind";
+"binding_hint" = "1.Get closer to vehicle and long press the lightning-shaped button\n2.The vehicle continuous making a “beep” binding sound\n3.Click “Searching for the vehicle” to bind";
+"searching_bike" = "Searching bike";
+"addvc_binding_bike" = "Add vehicle";
+//<!-- 自定义车辆 -->
+"custom_car" = "Customize the vehicle";
+"bike_info" = "Vehicle information";
+
+//<!-- 添加子用户 -->
+"add_new_people" = "New member";
+"add_people" = "Add member";
+"input_child_phonenum" = "Please enter the sub-user mobile phone number";
+"input_true_phonenum" = "Please enter a valid mobile number";
+"add_childre_succce" = "Subuser adding successfully";
+"add_child_fail" = "Subuser adding failed";
+"sure_to_delete_user" = "Want to delete this user?";
+"child_can_not_delete_child" = "Subusers do not have permission to delete subusers";
+
+//<!-- 配件管理 -->
+"device_info" = "Device Information";
+"device_operator_service" = "Equipment operation service";
+"gps_signal" = "GPS signal";
+"gsm_signal" = "GSM signal";
+"normal_accessories" = "Ordinary accessories";
+"normal_accessories_content" = "Note: In addition to the original ordinary key, you can make another 2 spare keys through APP. And long press to remove the unwanted keys.";
+"smart_accessories" = "Smart accessories";
+"smart_accessories_content" = "Note: When the phone is connected to the vehicle and the sensor key or wristband is within the sensing range of the vehicle, you can check its power in the home side slider.";
+"normal_key_one" = "Ordinary key1";
+"normal_key_two" = "Ordinary key2";
+"smart_key" = "Bluetooth Key";
+"smart_key_one" = "Bluetooth Key1";
+"smart_key_two" = "Bluetooth Key2";
+"BLE_accessories_content" = "Note: When adding Bluetooth key, first turn off the key sensor & switch to manual control, then follow the prompts.";
+"add_accessories" = "Add accessories";
+"add_sh_accessories" = "Add wristband";
+"add_sh_accessories_content" = "For a better experience of the wristband, please download the '芸动汇' APP";
+"add_blutooth_accessories" = "Add key";
+"bind_normal_accessories" = "Binding ordinary key";
+"bind_smart_accessories" = "Binding smart accessories";
+"bind_BLE_key" = "Binding BLE Key";
+"normal_key_content" = "Press the appropriate button in turn.";
+"reset_bind" = "Rebinding";
+"unbind" = "Unbinding";
+"well" = "Good";
+"gps_has" = "GPS already has";
+"tire_has" = "Tire pressure is configured";
+//<!-- 配置普通钥匙 -->
+"no_one_key" = "Not the same key";
+"set_normal_key_fail" = "Failed to configure ordinary key";
+"set_normal_key_success" = "Configure successed";
+"set_key_timeout" = "Configuration timeout";
+"key_button_double" = "The button is repeated";
+"key_set" = "To configuration an ordinary key";
+"back_accessories_management" = "Back to accessories management";
+
+//<!-- 蓝牙钥匙 -->
+"key_model" = "Type";
+"key_sn" = "Bar code";
+"mac" = "MAC";
+"smart_accessories_info" = "Accessories information";
+"Bluetooth_key_configuration" = "To configure a Bluetooth key";
+"button_click_prompt" = "Please press the key lock button";
+
+
+//<!-- 绑定GPS配件 -->
+"scan_gps_sn" = "Scan GPS QR code";
+"central_control_connect_gps" = "Central control connected to GPS device";
+"check_sim_net" = "Enquire SIM card network";
+"search_gps_satellite" = "Search for GPS satellites";
+"device_regist_service" = "Device registration server";
+"preset_url_upload" = "Default URL upload point";
+
+//<!-- 新蓝牙钥匙 -->
+"new_blutooth_smart_content" = "Please click the key button";
+"new_blutooth_smart_key_set" = "Intelligent key settings";
+"blutootn_key" = "smartkey";
+"set_blutooth_key_fail" = "Failed to configure intelligent key";
+"set_blutooth_key_success" = "Configuration of intelligent key Successfully";
+
+//<!-- 蓝牙钥匙类型 -->
+"key_model_wain" = "Bluetooth alarm";
+"key_model_normal" = "Ordinary Key";
+"key_model_smart" = "Sensing key";
+"key_model_gps" = "Vehicle GPS";
+"key_model_sh" = "Driving wristband";
+/*<!-- 配置胎压 -->*/
+"add_tirt_pressure" = "Add pressure";
+"delete_tirt_pressure" = "delete pressure";
+"tirt_pressure_check" = "Tire pressure monitoring";
+"tirt_max_long" = "Tire pressure monitor max num is two";
+"tirt_front_has" = "configured front tire pressure monitor";
+"tirt_rear_has" = "Configured rear tire pressure monitor";
+"no_tirt_type" = "This type is not tire pressure";
+"front_tire_pressure" = "Front tire";
+"rear_tire_pressure" = "Rear tire";
+
+//<!-- 地图 -->
+"map_ride" = "Driving navigation";
+"destination" = "Please enter your destination";
+"mode_navigation" = "Mode navigation";
+"real_navigation" = "Real navigation";
+"offline_map" = "Offline map";
+"download_manager" = "Download management";
+"city_list" = "City list";
+"download_ing" = "Downloading";
+"download_over" = "Downloading completed";
+"start_download" = "Download starting";
+"stop_download" = "Download paused ";
+"has_downloaded" = "Downloaded";
+"wait_download" = "Waiting for download";
+"has_stop" = "Paused";
+"map_search_address" = "Find by region";
+"input_end_address" = "Please enter your destination first";
+"no_search_address" = "No results found";
+"zhixia_city" = "Municipality";
+"gangao_city" = "Hong Kong, Macao and Taiwan";
+"map_search_title" = "The destination you are looking for is:";
+"searching" = "searching...";
+"locationing" = "Positioning...";
+"go_to" = "Go here";
+"start_navigation" = "Navigation started";
+"bike_lines" = "Driving route";
+
+//<!-- 我 -->
+"about" = "About us";
+"version" = "Version number:";
+"state" = "Version notes";
+"into_buy" = "Enter purchase";
+"help" = "Help center";
+"feedback" = "Feedback";
+"call_our" = "Free hotline";
+
+//<!-- 消息通知 -->
+"msg_notification" = "Notification";
+"all_choice" = "Select all";
+"msg_null" = "No news yet";
+"system_message" = "System information";
+
+//<!-- 意见反馈 -->
+"commit" = "Submit";
+"feedback_hint" = "Please enter your question or suggestion";
+"mail_qq" = "E-mail:";
+"mail_info" = "Please enter your e-mail address";
+"mail_wrong" = "The e-mail format incorrect";
+"send" = "Send";
+"sending" = "sending";
+"send_success" = "Sent successfully";
+"send_fail" = "Sent failed";
+
+//<!-- 购买 -->
+"buy" = "Buy";
+"building" = "Building...";
+
+//<!-- 个人资料 -->
+"personal_data" = "My Profile";
+"birthday" = "Birthday";
+"login_out" = "Log out";
+"succeed" = "Carry out";
+"nickname" = "Name";
+"phone" = "Mobile phone number";
+"regist_phone" = "Register mobile phone number";
+"sex" = "Gender";
+"woman" = "Female";
+"man" = "Male";
+"real_name" = "Actual name";
+"user_card" = "ID card No.";
+"please_input_birday" = "Select date";
+"edit" = "Edit";
+"update_userinfo_success" = "Modification successfully";
+"update_userinfo_fail" = "Modification failed";
+"no_connect_state" = "Disconnected";
+"card_birthday_false" = "Birthday not valid";
+
+//<!-- 头像 -->
+"head" = "Profile photo";
+"camara" = "Photo taking";
+"photo" = "Album";
+"photo_phone" = "Choose from mobile phone photo album";
+"input_user_name" = "Please enter user name";
+"name_to_long" = "User name up to 10 characters";
+"add_person_success" = "User adding successfully";
+"update_person_success" = "User information modification successfully";
+"please_set_headurl" = "Please set profile photo first";
+
+//<!-- 设置 -->
+"language_zh_en" = "Language";
+"language_zh" = "Chinese";
+"language_en" = "English";
+"language_choice" = "Language selection";
+"Follow_system" = "Follow system";
+
+
+//<!-- 关于骑管家 -->
+"user_service_info" = "User agreement";
+"user_privacy_info" = "Privacy policy";
+"introduce_animation" = "Introduction animation";
+"software_version" = "Software version";
+"renew" = "Update";
+
+//<!-- 提醒 -->
+"name" = "Name";
+"save" = "Save";
+"name_null" = "Please enter name";
+"set_time" = "Set time";
+"remove" = "Delete";
+"removing" = "Deleting";
+"add_time" = "Add time";
+"add" = "Add to";
+"repeat" = "Repeat";
+
+ //<!-- 下载apk -->
+"soft_update_info" = "A new version of the software has been detected and updated immediately\?";
+"download" = "Click to download";
+"download_complete" = "Download completed";
+"downloading" = "Downloading..";
+"latest_version" = "This is the latest version";
+"down_new_version_fail" = "New version information acquiring failed";
+"soft_updating" = "Downloading, please wait";
+
+//<!-- 固件更新 -->
+"fire_update_info" = "A new firmware version was detected and updated immediately\?";
+"fireupdating" = "Firmware upgrading";
+"fireupdate_success" = "Vehicle update successfully";
+"child_can_not_fireupdate" = "Subuser unprivileged for firmware update";
+"update_now" = "Update immediately";
+"update_later" = "No update yet";
+"fireupdate_fail" = "Vehicle update failed";
+"version_un_same" = "Inconsistent versions, unable to update";
+"fire_device_connnecting" = "The vehicle is connecting...";
+"fire_device_updating" = "The vehicle system is being upgraded...";
+
+//<!-- 打开蓝牙提示 -->
+"open_blutooth" = "Bluetooth is currently off, is it turned on\?";
+"open" = "Turn on";
+"blutooth_not_open" = "Bluetooth is not turned on";
+
+//<!-- 天气预报 -->
+"just" = "Current weather";
+"ago" = "Before";
+"hour" = "Hour";
+"minute" = "Minute";
+"day" = "Day";
+"no_weather_info" = "No data";
+"local_city" = "city";
+"weath_atmosphere" = "Air";
+"weath_excellent" = "Excellent";
+"weath_good" = "Good";
+"weath_mild_pollution" = "Mild pollution";
+"weath_moderate_pollution" = "Moderately polluted";
+"weath_heavy_pollution" = "Severe pollution";
+"weath_serious_pollution" = "Serious pollution";
+
+//<!-- 扫一扫 -->
+"scan_scan" = "Scan QR code";
+"scan_content" = "Put the QR code and barcode inside the box, scan automatically.";
+"connect_and_bind" = "Search connecting";
+"bind_success" = "Binding successed";
+"bind_fail" = "Binding failed";
+"use_now" = "Use immediately";
+"no_device_find" = "Please make sure the device is turned on or restarted";
+"device_has_user_bind" = "This vehicle has been bound by %s, please unbind and try binding again";
+"scan_result_wrong" = "The scan result is abnormal, please rescan";
+"no_have_tx_code" = "No barcode existing";
+"device_has_bind" = "Device bound";
+
+//<!-- 手动输入sn -->
+"change_sn" = "Enter SN manually";
+"input_sn" = "Please confirm that correct SN has been entered";
+"change_scan" = "Switch scan code";
+"please_input_sn" = "Please enter SN";
+"please_input_right_sn" = "Please confirm correct SN entered";
+
+//<!-- 帮助信息 -->
+"help_one" = "How to bind the phone to the vehicle?";
+"help_one_info" = "1)Long press the unlock key until the vehicle goes in a binding state &makes a “beep” sound;\n2)Click the vehicle searched by app, the binding will be completed automatically;\n3)After binding, your vehicle could be remote-controlled.\n\nNote: While binding, you need to turn on the Bluetooth & locator function. If it fails, you can turn on or off the Bluetooth repeatedly or restart the app.";
+
+"help_two" = "How to remotely control a bound vehicle with a mobile phone?";
+"help_two_info" = "After binding the vehicle, turn on the Bluetooth & open the app, then get close to the vehicle. The cellphone will connect to the vehicle automatically. If the connection succeeds, vehicle can be remotely controlled (such as locking & unlocking).";
+
+"help_three" = "How does the remote key remote control vehicles?";
+"help_three_info" = "1)Lock button: Press the button to lock the vehicle. And long press to lock the vehicle silently;\n2)Lightning-shape button: Press the button to open the saddle. And long press to switch on the ignition;\n3)Unlock button: Press the button to unlock the vehicle. And long press to unbind vehicle.\n\nNote: All functions are subject to actual operation.";
+
+"help_four" = "How does the Bluetooth key control the vehicle?";
+"help_four_info" = "1)Remote control: The button light is red, the function is consistent with that of the remote key;\n2)Sensor mode: The button light is blue. It will automatically unlock when getting close to vehicle, and lock while keeping away from it. Sensing distance can be adjusted on APP.\n\nNote: When you want to switch modes，long press the lock button & unlock button at the same time. Bluetooth key with Bluetooth logo on the back.";
+
+"help_five" = "How to use fingerprint function?";
+"help_five_info" = "Explanation of fingerprint state:\n1)Fingerprint not recorded: when touching the sensor, it will make a “bam bam bam” sound;\n2)Fingerprint has been recorded: when touching the sensor, the ignition is switched on . Long press the fingerprint module, unlock the saddle. When touch again, the vehicle will be power off.\n3)Invalid fingerprint: There is no response when touching the sensor.\n\n Explanation of fingerprint input:\n1)Please do as app prompts, continuous touch the fingerprint module and then lift your finger.\n2)The finger should cover the whole area within the metal ring for accurate fingerprint identification.\n3)3> You can also input multiple fingerprints in different positions of the same finger to improve identification efficiency.\n\nNote:The fingerprint module is made of semiconductor material, it’s waterproof, high temperature prevention & ultraviolet-proof. It is safe & functioning properly. When there is rain on the surface , please wipe it then use it.\n\nReplace the alarm or fingerprint module: after replacement, please first empty the module.  And start to re-input the fingerprint after touching the sensor and hearing the sound of ”bam bam bam“.";
+
+"help_six" = "How to use mobile phone induction?";
+"help_six_info" = "Turn on the induction, get close to the vehicle with your cellphone, the scooter unlocked automatically, while when you're away from scooter, it is locked.\n\n Note: APP should be kept running in the background. You can add the APP to the white list,  otherwise please activate the APP when you approach.";
+
+"help_seven" = "Why is the vehicle automatically locked and how to turn off this function?";
+"help_seven_info" = "To prevent users from forgetting to lock. If cellphone is not connected, vehicle unlocks & wheels do not turn for 45 seconds, it will lock automatically. If you do not need the function, you can turn it off under the Vehicle Settings interface. Then please do not forget to lock your scooter every time when you're away.";
+
+"help_eight" = "What if the vehicle cannot be locked?";
+"help_eight_info" = "When the sensor key is next to the vehicle, and the cellphone's sensor turned on, that the vehicle cannot be locked manually. Because logically vehicle induction first, so when vehicle is manually locked, it'll be unlock by induction again. If you need to manually lock, please turn off the induction function.";
+
+"help_nine" = "How to detect the vehicle?";
+"help_nine_info" = "When Mobile phone connected to the vehicle, the phone will automatically check, and report fault information. All for ensure safety.";
+
+"help_ten" = "How to unbind the vehicle, can it still be remotely controlled after unbinding?";
+"help_ten_info" = "Please set “unbind” in the vehicle Settings. Then the related information of the vehicle will be cleared, leaving only the accessories related configuration . And when open the APP again, the vehicle information will no longer showed, nor can you remotely control the vehicle. If needed, please rebind & reconnect.";
+
+"help_ten_one" = "What are vehicle accessories and how to add accessories?";
+"help_ten_one_info" = "Vehicle accessories refer to the smart accessories which are extensible, such as Bluetooth Key, Bluetooth key, wristband, etc. , and those can be set in the corresponding page.";
+
+
+"sensing_key" = "Induction key";
+"regist_allinfo" = "\t\tJiangsu XINRI Electric Vehicle Co., Ltd. (hereinafter referred to as \“New Day\”) hereby reminds you (user) that before registering as a user, please read this User Agreement (hereinafter referred to as “Agreement”) to ensure that you fully understand The terms of this agreement. Please read carefully and choose to accept or not accept this agreement. You are not authorized to register, log in, or use the services covered by this Agreement unless you accept all the terms of this Agreement. Your registration, login, use, etc. will be deemed acceptance of this Agreement and you agree to be bound by the terms of this Agreement.This Agreement stipulates the rights and obligations of the \“SUNRA\” software service (hereinafter referred to as “the Service”) between the new day and the user. \“User\” means an individual who registers, logs in, or uses the Service. This Agreement may be updated from any time by the new day. The updated terms of the agreement will be replaced by the original terms of the agreement without prior notice. Users can check the terms of the latest agreement on this website. After the terms of the agreement are revised in the new day, if the user does not accept the revised terms, please stop using the service provided by the new day immediately, and the user will continue to use the service provided by the new day will be deemed to accept the revised agreement.\n\n1, account registration\n1, users need to register a “SUNRA” account before using this service. The \“SUNRA\” account should be registered with the mobile phone number and the vehicle via Bluetooth. Please use the mobile phone number that has not been bound to the \“SUNRA\” account, and the mobile phone number that has not been banned under this agreement. ”SUNRA“ account. The new day can be changed according to the user\'s needs or product needs, and there is no need to notify the user in advance.\n2, ”SUNRA“ is based on mobile car Bluetooth low energy mobile management products. By accepting this Agreement, you are deemed to agree to the automatic extraction of your mobile phone number and the Bluetooth MAC address of the electric vehicle during the use of the software for any stage of the software service.\n3. When the user registers and uses the service, the new day needs to collect personal information identifying the user\'s identity so that the new day can contact the user when necessary, or provide a better user experience. The information collected on the new day includes but is not limited to the user\'s name, gender, age, date of birth, ID number, address, school situation, company status, industry, hobbies, places that are often found, personal descriptions; The use of information will be subject to the protection of the third user\'s personal privacy information.\n\n two, service content\n1, the specific content of this service is provided by the new day according to the actual situation, including but not limited to authorized users to view the car condition, body positioning, vehicle medical examination, after-sales service, etc. through their account. The service provided by the new day may be changed, and the service content provided by the new day may be changed at any time; the user will receive a notification of the service change on the new day.\n2, the services provided by the new day include free services and fee-based services. The user can purchase the charging service by means of payment. The specific method is: the user pays a certain amount of RMB to purchase the peripheral products of the electric vehicle (such as smart Bluetooth key, GPS Bluetooth anti-theft module, etc.) or pay other service fees through the payment channel provided in the service ( Maintenance fee, SIM card network communication fee, etc.). For the fee-based service, the new day will give the user a clear prompt before the user uses it. Only when the user confirms and agrees to pay the fee according to the above payment method and completes the payment behavior, the user can use the fee-based service. The completion of the payment behavior is subject to the confirmation notice of the payment channel.\n\n three, user privacy information protection\n1, in the process of registering an account or using the service, the user may need to fill in or submit some necessary information, such as the identity information required by relevant national laws and regulations. If the information submitted by the user is untrue, incomplete or does not comply with the relevant laws and regulations, the user may not be able to use the service or be restricted in the process of using the service.\n2, personal privacy information refers to information related to the user\'s personal identity or personal privacy, such as: user\'s real name, ID number, mobile phone number, mobile device identification code, IP address, etc. The non-personal private information refers to the basic information recorded by the user on the server side of the new day and other general information outside the scope of the personal privacy information, and the information that is publicly disclosed by the user.\n3. Respecting the privacy of the user\'s personal privacy information is the consistent principle of the new day. The new day will adopt technical measures and other necessary measures to ensure the privacy of the user\'s personal information and prevent the leakage of personal privacy information of the user used in the service. Or lost. In the event of the above situation or the possibility of occurrence of the above situation, the new day will promptly take remedial measures.\n4, Xinyi will not disclose or disclose the user\'s personal privacy information to any third party without the user\'s consent. However, the following situations are not within the scope of the disclosure of user information by the new day:\n(1) According to relevant national laws and regulations, the new day must cooperate with relevant state departments to provide users with personal privacy information;\n(2) Because the user informs others of their user password or shares the registered account number and password with others, the leakage of any personal information caused by the user, or other personal privacy information that is not caused by the new day;\n(3) The user has reached an agreement with the new day and the cooperation unit on the joint use of the user\'s personal privacy information, and the new day thus discloses the user\'s personal privacy information to the partner unit;\n(4) Users disclose their personal privacy information to third parties themselves;\n(5) Any disclosure of personal privacy information due to hacking, computer virus intrusion and other force majeure events.\n5, User agrees that CoolOne Technology can use the user\'s personal privacy information in the following matters:\n(1) CoolOne Technology sends important notices to users, such as software updates, changes to the terms of this agreement, etc.\n(2) CoolOne Technology conducts internal audits, data analysis and research to improve CoolOne\'s products, services and communication with users;\n(3) According to the agreement of this agreement, CoolOne Technology manages and reviews user information and performs corresponding processing;\n(4) Other matters as required by laws and regulations.\n In addition to the above, CoolOne Technology will not use the user\'s personal information for any other purpose without the user\'s consent.\n6, in order to improve the technology and services of CoolOne Technology and provide users with a better service experience, CoolOne Technology has the right to collect and use the user\'s personal privacy information and non-personal private information or provide users with non-personal privacy to third parties. information.\n\nFourth. account management\n1, the ownership of the “Riding Butler” account belongs to CoolOne Technology. After the user completes the application for registration, he or she will obtain the right to use the “Riding Steward” account. The right to use belongs only to the initial application registrant. It is forbidden to donate, borrow, rent, Transfer or sale. Cool One Technology has the right to recycle the user\'s “riding the butler” account due to business needs.\n2, the user can change or delete the personal data, registration information and content on the “riding the housekeeper” account, but it should be noted that deleting the relevant information will also delete the text and pictures stored by the user in the system. The user is responsible for this risk.\n3, the user shall be solely responsible for the authenticity, legality, harmlessness, accuracy and validity of the information published by the “Riding Steward” account or the service, and any legal liability related to the information transmitted by the user shall be borne by the user. At your own risk, it has nothing to do with Cool One Technology. If damage is caused to CoolTech or a third party, the user shall bear the relevant economic and legal responsibilities according to law.\n4, the user is responsible for the safekeeping of the registered account information and the security of the account password. The account is stolen or the password is lost due to improper storage by the user. The responsibility is borne by the user. The user is responsible for all actions of registering an account in the Service. The user agrees not to use the account or password of another user under any circumstances. Users should immediately notify CoolTech when they suspect that they are using their account or password.\n5, the user shall abide by the terms of this agreement and use the service correctly and appropriately. If the user violates any of the terms of this agreement, CoolTech will have the right to suspend or terminate the “riding the housekeeper” of the defaulting user after notifying the user. Account service.\n6, users should not use the “riding the butler” account or the service to do the following:\n(1) Submit and publish false information;\n(2) Stealing other people\'s avatars or materials, posing and using the name of others;\n(3) Use technical means to tamper with other people\'s accounts;\n(4) Use the “riding the butler” account or the service to engage in any illegal or criminal activities;\n(5) Produce, publish, or operate or disseminate methods, tools, or practices related to such behavior, whether or not they have a commercial purpose;\n(6) Other violations of laws and regulations, infringement of the legitimate rights and interests of other users, interference with the normal operation of “riding the butler” or the unauthorised authorization of Cooltech.\n\nFive. data storage\n1, CoolOne Technology is not responsible for the deletion or storage failure of the user in the service.\n2, Cool One Technology can determine the maximum storage period of the user\'s data in the service according to the actual situation, and allocate the maximum storage space for the data on the server. Users can back up the relevant data in this service according to their own needs.\n3. If the user stops using the service or the service is terminated, CoolOne can permanently delete the user\'s data from the server. After the service is terminated or terminated, CoolTech is not obligated to return any data to the user.\n\n six. intellectual property rights statement\n1, except for the intellectual property rights of the advertisements involved in the service, which are provided by the corresponding advertisers, and the knowledge provided by CoolOne Technology in the service (including but not limited to web pages, texts, pictures, audio, videos, icons, etc.) Property rights are owned by CoolOne Technology, except that users have legally acquired intellectual property rights in their published content before using the Service.\n2, unless otherwise stated, the copyright, patent and other intellectual property rights of the software supported by CoolOne Technology are owned by CoolOne Technology.\n3, Cool One Technology\'s graphics, text or its composition in this service, as well as other Cool One technology logos and products, service names (hereinafter collectively referred to as “Cool One Technology Logo”), its copyright or trademark rights to cool one Technology is all. Users may not display or use or use the Cooltech logo in any way without the written consent of Cooltech, or indicate to others that the user has the right to display, use, or process the Cooltech logo.\n4、The above and any other intellectual property rights owned by CoolTech or related advertisers are protected by law. Users may not use or create related derivative works in any form without the written permission of Cooltech or related advertisers.\n5, the geographical location information of the repair station is used by our company and our authorized partners. Without the written permission of our company, any third party may not use the geographical location information and use the geographical location information for commercial use or Other uses.\n\n7, risk taking\n1, the user understands and agrees that “riding the butler” only provides users with a platform for obtaining electric vehicle condition and after-sales service. The user must be responsible for all actions under the registered account, including any content published by the user and the resulting content. Any consequences. The User shall personally judge the Content provided by the Riding Butler and the Service and assume all risks arising from the use of the Content, including risks arising from the reliance on the correctness, completeness or usefulness of the Content. CoolOne Technology will not be liable for any loss or damage caused by user actions. If the user finds that anyone has violated this agreement or uses the service in other improper ways, please report or complain to CoolTech immediately, and CoolTech will handle it according to this agreement.\n2, the user understands and agrees that due to business development needs, CoolOne Technology reserves the right to change, suspend, terminate or revoke all or part of the service content of the service unilaterally, and the user shall bear this risk.\n\n8, legal responsibility\n1, if Cooltech discovers or receives reports from others or complains that the user violates this agreement, CoolTech has the right to review and delete related content, including but not limited to user data and forum articles, without notice. The offending account is processed according to the seriousness of the case, including but not limited to warnings and account bans. After processing, CoolOne will notify the user to process the result.\n2, the user understands and agrees that CoolOne Technology has the right to impose penalties on violations of relevant laws and regulations or the provisions of this Agreement in accordance with reasonable judgment, and take appropriate legal actions against users who violate the law and regulations, and save relevant information according to laws and regulations. The relevant department reports, etc., the user shall bear all legal liabilities arising therefrom.\n3. The User understands and agrees that any third party claim, claim or loss caused by or in violation of this Agreement, including reasonable legal fees, shall be borne by the offending user.\n\n9, force majeure and other excuses\n1, the user understands and confirms that in the process of using the service, risk factors such as force majeure may be encountered to interrupt the service. Force majeure is an objective event that cannot be foreseen, cannot be overcome, and cannot be avoided and has a significant impact on one or both parties, including but not limited to natural disasters (such as floods, earthquakes, plague epidemics, storms, etc.) and social events (such as war, turmoil, Government behavior, etc.). In the above situation, CoolOne Technology will try its best to cooperate with the relevant units in the first time to repair in time, but the losses caused to the users or third parties will be exempted by the law and the cooperation units within the scope permitted by law.\n2. This service, like most Internet services, may be affected by various security issues, including but not limited to user reasons, network service quality, social environment and other factors. For example, other users use the user\'s data to create reality. Harassment in life; other software downloaded or installed by users or other APPs that contain ”Trojan Horse“ viruses threaten the security of users' mobile phone information and data, and continue to affect the normal use of the service. Users should strengthen the information security and user information protection awareness, and pay attention to strengthen password protection to avoid loss and harassment.\n3, the user understands and confirms that the service has service interruption or cannot satisfy the user due to force majeure, computer virus or hacker attack, system instability, user location, user shutdown, and any other technology, internet, communication line reasons, etc. The risk of the request, resulting in any loss to the user or third party, Cool One Technology does not assume any responsibility.\n4, The User understands and acknowledges that there are misleading, deceptive, threatening, defamatory, offensive or illegal information from any other person in the course of using the Service, or infringement of the rights of others. Anonymous or impersonal information, and the accompanying act of this information, resulting in any loss to the user or a third party, Cooltech does not assume any responsibility.\n5, the user understands and confirms that CoolOne Technology needs to repair or maintain the “riding the butler” platform or related equipment on a regular or irregular basis. If the service caused by such a situation is interrupted within a reasonable time, Cool One Technology does not need to To take any responsibility for this, but Cooltech should make advance notice.\n6, Cool One Technology has the right to deal with illegal or breach of contract content in accordance with laws and regulations and this agreement. This right does not constitute the obligation or commitment of CoolOne Technology. CoolOne Technology cannot guarantee the timely detection of illegal or breach of contract or corresponding deal with.\n7, The user understands and confirms that CoolOne Technology does not assume any responsibility for the quality defects of the following products or services provided by CoolOne Technology to the user and any losses caused by it:\n(1) The service provided by CoolOne Technology to users free of charge;\n(2) Any product or service that Cool One Technology gives to users.\n8. Under no circumstances will Cooltech be liable for any indirect, consequential, punitive, incidental, special or criminal damages (including loss of profits suffered by users using “riding the housekeeper” or the service) Take responsibility, even if Cool One Technology has been told the possibility of the loss. Although this Agreement may contain conflicting regulations, the total responsibility of CoolOne Technology to the User, regardless of the cause or behavior, shall not exceed the cost paid by the User for the use of Cool One Technology. .\n\n10, service change, interruption, termination\n1, in view of the particularity of the network service, the user agrees that Cooltech has the right to change, discontinue or terminate some or all of the services (including fee-based services) at any time. The user is notified before the change, interruption or termination of CoolTech, and the equivalent service should be provided to the affected users.\n2, in any of the following circumstances, CoolOne Technology reserves the right to change, discontinue or terminate the free service or fee-based service provided to the user without any liability to the user or any third party:\n(1) According to the law, users should submit real information, and the personal data submitted by the user is untrue or inconsistent with the information at the time of registration and fails to provide reasonable proof;\n(2) The user violates the relevant laws and regulations or the agreement of this agreement;\n(3) in accordance with the provisions of the law or the authority of the authority;\n(4) is for security reasons or other necessary situations.\n\nEleven. other\n1, Cool One Technology solemnly reminds users to pay attention to the terms of this agreement exempting Cool One Technology and restricting user rights. Please read carefully and consider the risk. Minors should read this agreement accompanied by a legal guardian.\n2, the validity, interpretation and resolution of this agreement shall apply to the laws of the People\'s Republic of China. If there is any dispute or dispute between the user and CoolTech, it should be settled through friendly negotiation. If the negotiation fails, the user agrees to submit the dispute or dispute to the people\'s court that has jurisdiction over the registered address of Cooltech.\n3. Nothing in this Agreement shall be valid for any reason or for no reason, and the remaining terms shall remain in force and shall be binding on both parties.";
+

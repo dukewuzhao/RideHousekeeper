@@ -1,0 +1,224 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+#---------- begin -----------
+
+def update_build_number()
+
+    currentTime = Time.new.strftime("%Y%m%d")
+    build = get_build_number()
+    if build.include?"#{currentTime}."
+      # => 为当天版本 计算迭代版本号
+      lastStr = build[build.length-2..build.length-1]
+      lastNum = lastStr.to_i
+      lastNum = lastNum + 1
+      lastStr = lastNum.to_s
+      if lastNum < 10
+        lastStr = lastStr.insert(0,"0")
+      end
+        build = "#{currentTime}.#{lastStr}"
+      else
+        # => 非当天版本 build 号重置
+        build = "#{currentTime}.01"
+    end
+    puts("*************| 更新build #{build} |*************")
+    # => 更改项目 build 号
+    increment_build_number(
+      build_number: "#{build}"
+    )
+
+end
+
+def prepare_version(options)
+
+    # 正式版本号
+    increment_version_number(
+        version_number: options[:version]
+    )
+
+    # 构建版本号
+    update_build_number()
+ end
+
+ def get_update_description()
+
+     return "版本号:\n\b\b#{ENV['APP_VERSION_RELEASE']} \n更新描述:\n\b\b#{ENV['RELEASE_NOTES']}"
+   
+ end
+
+#---------- end -------------
+
+#---------- begin -----------
+
+fastlane_version "2.105.2"
+
+default_platform :ios
+
+platform :ios do
+
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+	FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD = ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"]
+    	FASTLANE_SESSION = ENV["FASTLANE_SESSION"]
+    cocoapods
+  end
+
+  desc "1).骑管家 发布到 fir"
+  lane :beta_main_pgy do
+	build_app(
+		workspace: "RideHousekeeper.xcworkspace",
+		scheme:"RideHousekeeper",
+		export_method:"ad-hoc",
+		output_directory:"./fastlane/package",
+		configuration:"Release",#配置(Debug,Release)
+	)
+	firim(firim_api_token:"ab33eeefb79da8f74c22fde01a6fffcb")
+  end
+
+  desc "2).爱玛 发布到 fir"
+  lane :beta_plus_pgy do
+	build_app(
+		workspace: "RideHousekeeper.xcworkspace",
+		scheme:"AiMaRideHouse",
+		export_method:"ad-hoc",
+		output_directory:"./fastlane/package",
+		configuration:"Release",#配置(Debue,Release)
+	)
+	firim(firim_api_token:"ab33eeefb79da8f74c22fde01a6fffcb")
+  end
+
+
+  desc "3).新日Lite 发布到 fir"
+  lane :beta_XRLite_plus_pgy do
+	build_app(
+		workspace: "RideHousekeeper.xcworkspace",
+		scheme:"XinriLite",
+		export_method:"ad-hoc",
+		output_directory:"./fastlane/package",
+		configuration:"Debug",#配置(Debue,Release)
+	)
+	firim(firim_api_token:"ab33eeefb79da8f74c22fde01a6fffcb")
+  end
+
+desc "4).骑管家 发布到 苹果商店"
+  lane :release_qgj_plus_apple do
+    sh "fastlane release_apple --env RideHousekeeper"
+  end
+
+  desc "5).爱玛 发布到 苹果商店"
+  lane :release_plus_apple do
+    sh "fastlane release_apple --env AiMaRideHouse"
+  end
+
+  desc "6).骑管家 和 爱玛 同时 发布到 fir"
+  lane :beta_all_pgy do
+    sh "fastlane beta_pgy --env RideHousekeeper"
+    sh "fastlane beta_pgy --env AiMaRideHouse"
+  end
+
+  desc "7).骑管家 和 爱玛 同时 发布到 苹果TestFlight"
+  lane :beta_all_apple do
+    sh "fastlane beta_apple --env RideHousekeeper"
+    sh "fastlane beta_apple --env AiMaRideHouse"
+  end
+
+  desc "8).骑管家 和 爱玛 同时 发布到 苹果商店"
+  lane :release_all_apple do
+    sh "fastlane release_apple --env RideHousekeeper"
+    sh "fastlane release_apple --env AiMaRideHouse"
+  end
+
+  desc "发布 指定版本 到 蒲公英"
+  lane :beta_pgy do
+  # 如果你用 pod install
+  cocoapods
+
+# 如果你没有申请adhoc证书，sigh会自动帮你申请，并且添加到Xcode里
+  sigh(adhoc: true)
+  # 以下两个action来自fastlane-plugin-versioning，
+  # 第一个递增 Build，第二个设定Version。
+  # 如果你有多个target，就必须指定target的值，否则它会直接找找到的第一个plist修改
+  # 在这里我建议每一个打的包的Build都要不一样，这样crash了拿到日志，可以对应到ipa上
+
+    # 更新版本号
+    increment_version_number_in_plist(target: ENV['SCHEME_NAME'], version_number: ENV['APP_VERSION_RELEASE'])
+    
+    gym(scheme: ENV['SCHEME_NAME'], 
+      output_directory: './fastlane/package',
+      export_method: "ad-hoc",
+      silent: true,  # 隐藏没有必要的信息
+      clean: true  # 在构建前先clean
+        )
+    # 上传ipa到fir.im服务器，在fir.im获取firim_api_token
+  firim(firim_api_token: [firim_api_token])
+  end
+
+  desc "发布 指定版本 到 苹果TestFlight"
+  lane :beta_apple do
+  # 如果你用 pod install
+  cocoapods
+    # 更新版本号
+    increment_version_number_in_plist(target: ENV['SCHEME_NAME'], version_number: ENV['APP_VERSION_RELEASE'])
+    
+    gym(scheme: ENV['SCHEME_NAME'],
+      silent: true,  # 隐藏没有必要的信息
+      clean: true  # 在构建前先clean
+      )
+    pilot
+  end
+
+  desc "发布 指定版本 到 苹果商店"
+  lane :release_apple do
+
+    # 更新版本号
+    increment_version_number_in_plist(target: ENV['SCHEME_NAME'], 
+      version_number: ENV['APP_VERSION_RELEASE'])
+    
+    gym(scheme: ENV['SCHEME_NAME'], 
+      output_directory: './fastlane/package',
+      silent: true,  # 隐藏没有必要的信息
+      clean: true  # 在构建前先clean
+      )
+    deliver
+  end
+
+desc "发布 指定版本 到 苹果商店"
+  lane :release do
+
+    # 更新版本号
+    increment_build_number(xcodeproj: "RideHousekeeper.xcodeproj") 
+      bulid_app(xcworkspace:"RideHousekeeper.xcworkspace")
+   upload_to_app_store
+  end
+
+#---------- end -------------
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end
